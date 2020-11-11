@@ -323,61 +323,7 @@ class Ui_Form(object):
             self.startButton.setText("停止")
     # 设备下拉框选择事件,回显telnet账号密码
     def WrittingNotOfOther(self,deviceName):
-        print(deviceName)
-        if deviceName.lower() == "gs3101":
-            self.setAccountAndPassText("admin","s2@We3%Dc#")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "hg6201m":
-            self.setAccountAndPassText("root","hg2x0")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "hg6543C4":
-            self.setAccountAndPassText("admin","nE7jA%5m")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "hg6145D":
-            self.setAccountAndPassText("admin","nE7jA%5m")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "pt939g":
-            self.setAccountAndPassText("yhtcAdmin", "Cm1@YHfw")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "h2-2":
-            self.setAccountAndPassText("CMCCAdmin", "aDm8H%MdA")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "h2-3":
-            self.setAccountAndPassText("root", "!@qw34er")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "h1s-3":
-            self.setAccountAndPassText("root", "!@qw34er%MdA")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "h1s-2":
-            self.setAccountAndPassText("CMCCAdmin", "aDm8H%MdA")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "g-140w-mh":
-            self.setAccountAndPassText("user", "")
-            self.suRootPassEdit.setText("73c5FqBwv7Zd")
-        elif deviceName.lower() == "g-140w-c":
-            self.setAccountAndPassText("user", "")
-            self.suRootPassEdit.setText("73c5FqBwv7Zd")
-        elif deviceName.lower() == "gm220-s":
-            self.setAccountAndPassText("CMCCAdmin", "")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "gm219-s":
-            self.setAccountAndPassText("", "")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "gm620":
-            self.setAccountAndPassText("CMCCAdmin", "")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "an1202l":
-            self.setAccountAndPassText("admin", "ktcatv@2016-home")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "an1201l":
-            self.setAccountAndPassText("root", "an1201@wifi")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "ax1803":
-            self.setAccountAndPassText("CMCCAdmin", "aDm8H%MdA")
-            self.suRootPassEdit.setText("")
-        elif deviceName.lower() == "":
-            self.setAccountAndPassText("", "")
-            self.suRootPassEdit.setText("")
+       
     #设置telnet账号和密码显示方法
     def setAccountAndPassText(self,account,password):
         self.tnlentAccountEdit.setText(account)
