@@ -381,12 +381,7 @@ class Util():
     '''
     def contentMysql(self):
         try:
-            db = pymysql.connect(host="172.28.20.110",
-                                 user="root",
-                                 password="Zhinengjiasu@172",
-                                 port=3306,  # 端口
-                                 database="info",
-                                 charset='utf8')
+            db = pymysql.connect()
             return db
         except Exception as e:
             print(e)
